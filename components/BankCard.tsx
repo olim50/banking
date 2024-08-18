@@ -13,7 +13,7 @@ const BankCard = ({
         <div className="blank-card_content">
           <div className="flex flex-col pl-6 pt-4 pb-10">
             <h1 className="text-base font-semibold text-white">
-              {account.name || userName}
+              {userName}
             </h1>
             <p className="font-ibm-plex-serif font-black text-white pb-4">
               {formatAmount(account.currentBalance)}
