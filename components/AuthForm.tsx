@@ -59,7 +59,7 @@ const AuthForm = ({ type }: { type: string }) => {
           dateOfBirth: data.dateOfBirth!,
           ssn: data.ssn!,
           email: data.email,
-          password: data.password,
+          password: data.password
         };
 
         const newUser = await signUp(userData);

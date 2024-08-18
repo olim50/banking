@@ -12,6 +12,7 @@ import {
 } from "@/lib/actions/user.actions";
 import Image from "next/image";
 
+
 const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
   const router = useRouter();
 
@@ -20,7 +21,6 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
   useEffect(() => {
     const getLinkToken = async () => {
       const data = await createLinkToken(user);
-
       setToken(data?.linkToken);
     };
 
@@ -35,9 +35,7 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
       });
 
       router.push("/");
-    },
-    [user]
-  );
+    }, [user]);
 
   const config: PlaidLinkOptions = {
     token,
