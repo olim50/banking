@@ -26,12 +26,9 @@ export const BankTabItem = ({ account, appwriteItemId }: BankTabItemProps) => {
       })}
     >
       <p
-        className={cn(
-          `text-base line-clamp-1 flex-1 font-medium text-gray-500`,
-          {
-            " text-blue-600": isActive,
-          }
-        )}
+        className={cn(`text-base line-clamp-1 flex-1 font-medium text-gray-500`, {
+          " text-blue-600": isActive,
+        })}
       >
         {account.name}
       </p>
